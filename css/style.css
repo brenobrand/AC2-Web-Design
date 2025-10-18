@@ -1,0 +1,94 @@
+/* Importação de fonte, se necessário */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+/* Variáveis CSS (Design System) */
+:root {
+    --primary: hsl(239, 84%, 67%);
+    --primary-glow: hsl(220, 100%, 75%);
+    --accent: hsl(280, 100%, 70%);
+    --destructive: hsl(0, 84%, 60%);
+    --background: hsl(0, 0%, 100%);
+    --card: hsl(0, 0%, 100%);
+    --muted: hsl(210, 40%, 96.1%);
+
+    --gradient-hero: linear-gradient(135deg, var(--primary), var(--primary-glow));
+    --gradient-impact: linear-gradient(135deg, var(--accent), var(--primary));
+
+    --shadow-impact: 0 4px 14px hsla(239, 84%, 67%, 0.25);
+    --shadow-glow: 0 0 20px hsla(220, 100%, 75%, 0.4);
+}
+
+/* Base e Utilitários */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    background-color: var(--background);
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.card-elevated {
+    background-color: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-cta {
+    background: var(--gradient-impact);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.shadow-glow {
+    box-shadow: var(--shadow-glow);
+}
