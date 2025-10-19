@@ -34,3 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Por favor, preencha todos os campos com valores numéricos válidos e um salário maior que zero.');
             return;
         }
+ // Realiza os cálculos
+        const valorHora = salario / horasMensais;
+        const horasNecessarias = preco / valorHora;
+        const diasNecessarios = horasNecessarias / 8; // 8 horas por dia
+
+        // Atualiza o HTML com os resultados formatados
+        resultadoValorHora.textContent = formatarBRL(valorHora);
+        resultadoHoras.textContent = `${horasNecessarias.toFixed(2)} horas`;
+        resultadoDias.textContent = `${diasNecessarios.toFixed(2)} dias`;
+
+        // Mostra o card de resultados
+        resultadoCard.style.display = 'block';
+
+        // Opcional: faz a página rolar para o card de resultados
+        resultadoCard.scrollIntoView({ behavior: 'smooth' });
+    });
+});
