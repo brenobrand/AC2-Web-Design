@@ -1,58 +1,53 @@
-⏳ Quanto Vale o Seu Tempo?
-Um site interativo para ver a desigualdade social no Brasil.
+⏳ Quanto Vale o Seu Tempo? Um website educativo e interativo para conscientização sobre a desigualdade social e o valor do dinheiro no Brasil.
 
-Este projeto mostra, de forma simples, quantas horas uma pessoa precisa trabalhar para comprar produtos comuns, usando o salário dela e preços reais.
+O projeto demonstra, de forma visual e impactante, quantas horas uma pessoa precisa trabalhar para comprar produtos de consumo, com base em seu salário e em dados reais de preços e salários.
 
-🎯 Conceito Principal
-O Quanto Vale o Seu Tempo? quer:
+🎯 Conceito e Missão O Quanto Vale o Seu Tempo? tem como objetivo:
 
-Mostrar a desigualdade salarial no Brasil.
+Conscientizar sobre a realidade da desigualdade salarial brasileira.
 
-Ensinar o valor real do tempo de trabalho.
+Educar sobre o valor real do tempo e do dinheiro.
 
-Usar dados de verdade para deixar a discussão clara.
+Promover a reflexão sobre o consumo consciente e os privilégios socioeconômicos.
 
-📄 Estrutura do Site (Versão Inicial)
-O site tem 4 páginas principais:
+Utilizar dados reais para contextualizar a discussão e torná-la tangível.
 
-Home (index.html): A página de entrada. Tem uma chamada para ação e algumas estatísticas iniciais.
+📄 Estrutura do Site O projeto é composto por 5 páginas principais, cada uma com um propósito específico:
 
-Calculadora (calculadora.html): A ferramenta principal. O usuário digita o salário e o preço de um item para descobrir o tempo de trabalho necessário.
+Home (index.html): A página inicial impactante, com uma chamada forte para a ação e estatísticas chocantes que introduzem o conceito central.
 
-Produtos (produtos.html): Uma lista de produtos e o tempo que levaria para comprá-los com um salário mínimo. O filtro ainda está em desenvolvimento e pode ter alguns bugs.
+Calculadora (calculadora.html): A principal ferramenta interativa do site, onde o usuário pode inserir seu salário e o preço de um produto para calcular o tempo de trabalho necessário para a compra.
 
-Sobre (sobre.html): Explica a missão e a base do cálculo (a metodologia completa ainda não está totalmente detalhada).
+Produtos (produtos.html): Uma galeria de produtos reais, mostrando o tempo de trabalho necessário para adquiri-los com um salário mínimo. A página conta com um sistema de filtros simples.
 
-A página de 'Profissões' está planejada para a próxima versão.
+Profissões (profissoes.html): Uma seção que apresenta um comparativo salarial entre diversas profissões no Brasil, destacando a grande disparidade e o impacto nos hábitos de consumo.
 
-💻 Tecnologias Usadas
-Foco na simplicidade e no código "puro":
+Sobre (sobre.html): A página que explica a missão do projeto, a metodologia de cálculo e as fontes de dados, reforçando o caráter educativo e de conscientização.
 
-HTML: Para a estrutura das páginas.
+💻 Tecnologias Utilizadas Este projeto foi desenvolvido com uma stack de tecnologias simples e acessível, focando no aprendizado e na leveza do código.
 
-CSS: Para o visual, responsividade e cores. O design system está sendo refinado.
+HTML5: Usado para estruturar todo o conteúdo e as 5 páginas do site, com semântica e acessibilidade.
 
-JavaScript: Para o cálculo da calculadora e o filtro de produtos.
+CSS3: Responsável por todo o visual, incluindo o sistema de design personalizado, gradientes, sombras e a responsividade do layout (Mobile-First).
 
-🎨 Estética
-O design é limpo e direto.
+JavaScript (ES6): Implementa as funcionalidades interativas, como o sistema de cálculo da calculadora e o filtro de produtos, sem a necessidade de frameworks complexos.
 
-Cores: Paleta vibrante para destacar as informações.
+🎨 Design System e Estética O design do site segue uma estética moderna e limpa, com cores e tipografia cuidadosamente selecionadas para criar uma experiência de usuário envolvente.
 
-Tipografia: Fonte Inter para facilitar a leitura.
+Cores: Uma paleta vibrante e contrastante, com gradientes que destacam as seções e os botões de chamada para ação.
 
-Componentes: Cards e botões simples.
+Tipografia: Utilização da fonte Inter para garantir legibilidade e uma aparência contemporânea.
 
-⚙️ Como Ver o Projeto
-É muito fácil rodar o projeto localmente:
+Componentes UI: Cards com elevação e sombras, botões com efeitos glow e barras de progresso que transformam dados complexos em informações fáceis de visualizar.
 
-Baixe este repositório.
+⚙️ Como Executar o Projeto Para visualizar o site localmente, basta seguir estes passos:
 
-Ache a pasta do projeto.
+Clone este repositório para o seu computador.
 
-Abra o arquivo index.html no seu navegador (Chrome, Firefox, etc.).
+Navegue até a pasta do projeto.
 
-Não precisa de servidor!
+Abra o arquivo index.html em seu navegador de preferência.
 
-🤝 Contribuição
-Qualquer ajuda é bem-vinda, especialmente para corrigir os erros no filtro da página de Produtos e nas funcionalidades do JavaScript.
+Não é necessário instalar nenhuma dependência ou servidor local, já que o projeto foi construído com HTML, CSS e JavaScript puros.
+
+🤝 Contribuição Contribuições para melhorar o projeto são sempre bem-vindas. Se você tiver sugestões, ideias de novas funcionalidades ou identificar bugs, sinta-se à vontade para abrir uma issue ou enviar um pull request.
