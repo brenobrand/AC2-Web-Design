@@ -316,3 +316,278 @@ body {
     border-top: 1px solid #ddd;
     padding-top: 1rem;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* --- Estilos para a Calculadora --- */
+.calculator-section {
+    padding: 4rem 1rem;
+}
+
+.calculator-form-card {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.calculator-form .input-group {
+    margin-bottom: 1.5rem;
+}
+
+.calculator-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.calculator-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.calculator-form input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px hsla(239, 84%, 67%, 0.2);
+}
+
+.calculator-form button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Card de Resultado */
+.result-card {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    background: linear-gradient(135deg, hsl(239, 84%, 95%), hsl(220, 100%, 95%));
+}
+
+.result-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.result-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.result-icon-emoji {
+    font-size: 2.5rem;
+}
+
+.result-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.result-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #ddd;
+}
+
+.result-label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.result-value {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.result-hours {
+    color: var(--primary);
+}
+
+.result-days {
+    color: var(--accent);
+}
+
+.result-rate {
+    color: #333;
+}
+
+/* Seção de Comparação */
+.comparison-section {
+    padding: 2rem 1rem;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.comparison-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: var(--card);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.profession-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.badge-basic {
+    background-color: hsl(0, 84%, 60%);
+    color: white;
+}
+.badge-services {
+    background-color: hsl(45, 100%, 60%);
+    color: white;
+}
+.badge-expert {
+    background-color: hsl(120, 80%, 40%);
+    color: white;
+}
+
+.hours-needed {
+    font-size: 1rem;
+    color: #666;
+}
+/* --- Estilos para a página de Produtos --- */
+.products-section {
+    padding: 4rem 1rem;
+}
+
+.emoji-icon {
+    font-size: 2rem;
+}
+
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background-color: var(--muted);
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-btn:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-emoji {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.product-badge {
+    display: inline-block;
+    background-color: hsl(45, 100%, 80%);
+    color: #333;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cta-card {
+    background: var(--gradient-impact);
+    color: white;
+    padding: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.cta-card .btn-primary {
+    background-color: white;
+    color: var(--primary);
+}
