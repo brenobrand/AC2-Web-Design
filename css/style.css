@@ -770,3 +770,154 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* --- Estilos para a página Sobre --- */
+.mission-section {
+    padding: 4rem 1rem;
+}
+
+.mission-card {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.mission-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.mission-objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.objective-card {
+    text-align: center;
+}
+
+.objective-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.objective-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Seção de Vídeo */
+.video-section {
+    padding: 4rem 1rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.video-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.video-description {
+    color: #eee;
+    line-height: 1.6;
+}
+
+.video-player-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px dashed #444;
+}
+
+.video-emoji {
+    font-size: 3rem;
+}
+
+/* Seção de Metodologia */
+.methodology-section {
+    padding: 4rem 1rem;
+}
+
+.methodology-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.methodology-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.methodology-card {
+    text-align: left;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* CTA Final da página Sobre */
+.accent-section {
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.accent-section .cta-title {
+    color: white;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilo para a imagem do produto */
+.product-image {
+    max-width: 100px; /* Ajuste o tamanho conforme desejar */
+    height: auto;
+    margin-bottom: 0.5rem; /* Espaçamento abaixo da imagem */
+    display: block; /* Para centralizar a imagem */
+    margin-left: auto;
+    margin-right: auto;
+}
