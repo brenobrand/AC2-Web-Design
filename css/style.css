@@ -921,3 +921,11 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.profession-image {
+    max-width: 150px; /* Ajuste o tamanho conforme desejar */
+    height: auto;
+    margin-bottom: 0.5rem; /* Espaçamento abaixo da imagem */
+    display: block; /* Para centralizar a imagem */
+    margin-left: auto;
+    margin-right: auto;
+}
