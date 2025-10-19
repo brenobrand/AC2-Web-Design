@@ -591,3 +591,182 @@ body {
     background-color: white;
     color: var(--primary);
 }
+
+/* --- Estilos para a página de Profissões --- */
+.stats-section {
+    padding: 4rem 1rem 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    text-align: center;
+    border-radius: 12px;
+}
+
+.stat-badge {
+    background-color: var(--muted);
+    color: #444;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 0.5rem;
+    color: var(--primary);
+}
+
+.stat-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.professions-list-section {
+    padding: 2rem 1rem;
+}
+
+.professions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.profession-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.profession-emoji {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.profession-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.profession-salary {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background-color: var(--muted);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 4rem 1rem;
+}
+
+.impact-title {
+    color: white;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.impact-text-intro {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.impact-list {
+    list-style: none;
+}
+
+.impact-list li {
+    font-size: 1rem;
+    color: #eee;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.impact-list .list-icon {
+    font-size: 1.2rem;
+}
+
+.impact-compare-box {
+    background-color: white;
+    padding: 2rem;
+    text-align: left;
+}
+
+.compare-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.compare-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #ddd;
+    padding: 0.5rem 0;
+}
+
+.compare-label {
+    font-weight: 600;
+}
+
+.compare-value {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.text-destructive {
+    color: var(--destructive);
+}
+.text-accent {
+    color: var(--accent);
+}
+.text-primary {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
