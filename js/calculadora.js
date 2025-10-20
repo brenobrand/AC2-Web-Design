@@ -11,6 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultadoHoras = document.getElementById('resultadoHoras');
     const resultadoDias = document.getElementById('resultadoDias');
     const resultadoValorHora = document.getElementById('resultadoValorHora');
+    // Verifica se existe um parâmetro 'preco' na URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const precoFromUrl = urlParams.get('preco');
+
+    // Se o parâmetro 'preco' existir, preenche o campo de preço
+    if (precoFromUrl) {
+        precoInput.value = precoFromUrl;
+    }
 // Função para formatar números para a moeda BRL (Real)
     const formatarBRL = (valor) => {
         return new Intl.NumberFormat('pt-BR', {
