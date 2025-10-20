@@ -715,7 +715,7 @@ body {
 
 .impact-list li {
     font-size: 1rem;
-    color: #eee;
+    color: #000000;
     margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
@@ -827,7 +827,7 @@ body {
 }
 
 .video-description {
-    color: #eee;
+    color: #000000;
     line-height: 1.6;
 }
 
