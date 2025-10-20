@@ -928,10 +928,11 @@ body {
     display: block; /* Para centralizar a imagem */
     margin-left: auto;
     margin-right: auto;
+}
+
 
 /* Estilo específico para o botão "Saiba Mais" na seção inicial */
 .hero-section .btn-secondary {
-    color: white;
-    border-color: white;
-}
+    color: white;
+    border-color: white;
 }
